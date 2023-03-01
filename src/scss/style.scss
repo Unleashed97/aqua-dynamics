@@ -20,6 +20,8 @@ html {
 body {
     font-family: $family;
     font-size: 1.7rem;
+
+    overflow-x: hidden;
 }
 
 ul {
@@ -44,8 +46,9 @@ p {
 }
 
 // components
+@import 'components/container.scss';
+@import 'components/burger.scss';
+@import 'components/btn.scss';
+@import 'components/nav.scss';
 @import 'components/header.scss';
 @import 'components/footer.scss';
-@import 'components/container.scss';
-@import 'components/nav.scss';
-@import 'components/btn.scss';

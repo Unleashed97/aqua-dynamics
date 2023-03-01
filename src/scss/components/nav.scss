@@ -1,2 +1,25 @@
 .nav {
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media (max-width: $md) {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: flex-start;
+        }
+    }
+
+    &__item {
+    }
+
+    &__link {
+        transition: color 0.3s linear;
+
+        &:hover {
+            color: $colors-blue;
+        }
+    }
 }

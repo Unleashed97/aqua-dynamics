@@ -1,11 +1,78 @@
 .header {
-    padding: 13px 0 19px;
-    border-bottom: 1px solid #f5f5f5;
+    @media (max-width: $md) {
+        &.active {
+            position: absolute;
+            inset: 0;
+            z-index: 10;
 
-    &__inner {
+            background-color: $colors-primary;
+            .header__top {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .header__top-inner {
+                padding-top: 100px;
+            }
+
+            .header__content {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 20px;
+            }
+
+            .header__about {
+                display: block;
+            }
+
+            .header__tel {
+                display: flex;
+            }
+
+            .header__btn {
+                display: flex;
+            }
+
+            .header__bottom {
+                display: block;
+            }
+
+            .header__logo {
+                position: absolute;
+                left: 15px;
+                top: 13px;
+                z-index: 15;
+            }
+        }
+    }
+
+    &__top {
+        position: relative;
+        padding: 13px 0 19px;
+        border-bottom: 1px solid #f5f5f5;
+
+        min-height: 89px;
+    }
+
+    &__bottom {
+        padding: 19px 0 26px;
+        border-bottom: 1px solid #f5f5f5;
+
+        @media (max-width: $xl) {
+            display: none;
+        }
+    }
+
+    &__top-inner {
         display: flex;
         align-items: center;
         gap: 53px;
+
+        @media (max-width: $sm) {
+            justify-content: space-between;
+            gap: 20px;
+        }
     }
 
     &__content {
@@ -13,6 +80,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @media (max-width: $sm) {
+            display: none;
+        }
     }
 
     &__about {
@@ -21,12 +92,20 @@
         font-size: 1.4rem;
         font-weight: 300;
         color: $colors-text-light;
+
+        @media (max-width: $xl) {
+            display: none;
+        }
     }
 
     &__tel {
         display: flex;
         align-items: flex-start;
         gap: 14px;
+
+        @media (max-width: $md) {
+            display: none;
+        }
     }
 
     &__tel-icon {
@@ -46,6 +125,10 @@
     &__tel-number {
         font-size: 2.4rem;
         font-weight: 500;
+
+        @media (max-width: $lg) {
+            font-size: 1.8rem;
+        }
     }
 
     &__btn {
@@ -53,5 +136,12 @@
         max-width: 305px;
 
         padding: 10px;
+
+        @media (max-width: $lg) {
+            max-width: 200px;
+        }
+        @media (max-width: $md) {
+            display: none;
+        }
     }
 }
