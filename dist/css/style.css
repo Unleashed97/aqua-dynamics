@@ -667,6 +667,16 @@ p {
   grid-template-columns: repeat(4, 1fr);
   gap: 17px;
 }
+@media (max-width: 992px) {
+  .section--advantages .section__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 576px) {
+  .section--advantages .section__content {
+    grid-template-columns: 1fr;
+  }
+}
 .section--faq .section__title {
   max-width: 544px;
   margin-bottom: 44px;
@@ -815,6 +825,11 @@ p {
   padding: 30px 50px;
   background-color: #fffbfb;
   border-radius: 8px;
+}
+@media (max-width: 576px) {
+  .card {
+    padding: 15px;
+  }
 }
 .card__image-wrapper {
   height: 150px;

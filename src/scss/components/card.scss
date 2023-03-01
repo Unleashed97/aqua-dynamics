@@ -3,6 +3,10 @@
     background-color: #fffbfb;
     border-radius: 8px;
 
+    @media (max-width: $sm) {
+        padding: 15px;
+    }
+
     &__image-wrapper {
         height: 150px;
     }
