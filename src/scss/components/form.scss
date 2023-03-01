@@ -1,0 +1,53 @@
+.form {
+    &--showcase {
+        max-width: 833px;
+
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+
+        padding: 24px;
+
+        border-radius: 8px;
+        border: 1px solid $colors-decor;
+
+        @media (max-width: $xl) {
+            max-width: 400px;
+            grid-template-columns: 1fr;
+        }
+
+        @media (max-width: $sm) {
+            gap: 20px;
+        }
+
+        .form__group {
+        }
+
+        .form__input {
+            max-width: 237px;
+            width: 100%;
+            padding: 12px 24px;
+
+            border-radius: 1px;
+            border: 1px solid $colors-decor;
+
+            &::placeholder {
+                color: #636c72;
+            }
+
+            @media (max-width: $xl) {
+                max-width: 100%;
+            }
+        }
+
+        .form__btn {
+            width: 100%;
+            max-width: 237px;
+            padding: 11px;
+
+            @media (max-width: $xl) {
+                max-width: 100%;
+            }
+        }
+    }
+}

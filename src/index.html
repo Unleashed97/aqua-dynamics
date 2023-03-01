@@ -11,7 +11,54 @@
     @@include('html/partials/header.html')
 
     <!-- main -->
-    <main></main>
+    <main>
+        <div class="container container--lg">
+            <section class="section section--showcase">
+                <div class="container">
+                    <div class="section__inner">
+                        <h1 class="section__title">Профессиональное обслуживание и
+                            ремонт скважин на воду любой сложности в
+                            Санкт-Петербурге и ЛО</h1>
+
+                        <div class="section__content">
+                            <ul class="list list--showcase">
+                                <li class="list__item">
+                                    <img src="img/icons/check.svg" class="list__icon" alt="">
+
+                                    <p>
+                                        <span class="list__item-w-decor">Без ущерба газону и ландшафту</span>
+                                        <span>Оставим
+                                            все в чистоте</span>
+                                    </p>
+                                </li>
+                                <li class="list__item">
+                                    <img src="img/icons/check.svg" class="list__icon" alt="">
+
+                                    Проверенные и качественные материалы
+                                </li>
+                                <li class="list__item">
+                                    <img src="img/icons/check.svg" class="list__icon" alt="">
+
+                                    Высокое качество услуг 
+                                </li>
+                            </ul>
+
+                            <form action="/" method="post" class="form form--showcase">
+                                <div class="form__group">
+                                    <input type="text" name="name" class="form__input" placeholder="Имя">
+                                </div>
+                                <div class="form__group">
+                                    <input type="tel" name="tel" class="form__input" placeholder="Телефон">
+                                </div>
+
+                                <button type="button" class="btn btn--blue form__btn">Заказать звонок</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
     <!-- footer include -->
     @@include('html/partials/footer.html')
 

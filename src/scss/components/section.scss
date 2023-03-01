@@ -1,0 +1,50 @@
+.section {
+    &--showcase {
+        padding: 72px 0 59px;
+
+        margin-bottom: 52px;
+
+        background-image: url('../img/section/showcase/bg.png');
+        background-position: right center;
+        background-repeat: no-repeat;
+
+        border-bottom: 1px solid #f5f5f5;
+
+        @media (max-width: $lg) {
+            padding: 400px 0 0;
+            background-image: url('../img/section/showcase/bg-md.png');
+            background-position: right top;
+
+            border-bottom: 0;
+        }
+
+        @media (max-width: $md) {
+            padding: 400px 0 0;
+            background-image: url('../img/section/showcase/bg-md.png');
+            background-position: top center;
+        }
+
+        .section__inner {
+        }
+
+        .section__title {
+            max-width: 700px;
+            margin-bottom: 40px;
+        }
+    }
+
+    &__title {
+        font-size: 3.1rem;
+        font-weight: 600;
+        line-height: 39px;
+        letter-spacing: 0.03em;
+
+        @media (max-width: $lg) {
+            font-size: 2.5rem;
+        }
+        @media (max-width: $md) {
+            font-size: 2rem;
+            line-height: 1.2;
+        }
+    }
+}
