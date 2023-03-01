@@ -375,7 +375,7 @@ html {
 
 body {
   font-family: "Inter", sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 }
 
 ul {
@@ -399,6 +399,53 @@ p {
   margin: 0;
 }
 
+.header {
+  padding: 13px 0 19px;
+  border-bottom: 1px solid #f5f5f5;
+}
+.header__inner {
+  display: flex;
+  align-items: center;
+  gap: 53px;
+}
+.header__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__about {
+  max-width: 238px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #636c72;
+}
+.header__tel {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+.header__tel-icon {
+  padding-top: 3px;
+}
+.header__tel-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: #636c72;
+}
+.header__tel-number {
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+.header__btn {
+  width: 100%;
+  max-width: 305px;
+  padding: 10px;
+}
+
 .container {
   max-width: 1310px;
   padding: 0 15px;
@@ -406,4 +453,28 @@ p {
 }
 .container--lg {
   max-width: 1470px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-size: 1.7rem;
+  background: none;
+  border: 0;
+  border-radius: 1px;
+  cursor: pointer;
+}
+.btn--blue {
+  color: #ffffff;
+  background: linear-gradient(270deg, #018ff8 0%, #012d80 100%);
+  box-shadow: 0 4px 7px rgba(1, 45, 128, 0.3);
+}
+.btn--white {
+  background: -webkit-linear-gradient(#eee, #333);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  box-shadow: 0px 0px 20px rgba(1, 45, 128, 0.15);
 }

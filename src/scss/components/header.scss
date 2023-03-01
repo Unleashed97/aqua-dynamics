@@ -1,2 +1,57 @@
 .header {
+    padding: 13px 0 19px;
+    border-bottom: 1px solid #f5f5f5;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 53px;
+    }
+
+    &__content {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__about {
+        max-width: 238px;
+
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $colors-text-light;
+    }
+
+    &__tel {
+        display: flex;
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    &__tel-icon {
+        padding-top: 3px;
+    }
+
+    &__tel-body {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        font-size: 1.4rem;
+        font-weight: 300;
+        color: $colors-text-light;
+    }
+
+    &__tel-number {
+        font-size: 2.4rem;
+        font-weight: 500;
+    }
+
+    &__btn {
+        width: 100%;
+        max-width: 305px;
+
+        padding: 10px;
+    }
 }
