@@ -33,6 +33,20 @@
         }
     }
 
+    &--advantages {
+        margin-bottom: 77px;
+
+        .section__title {
+            margin-bottom: 36px;
+        }
+
+        .section__content {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 17px;
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;

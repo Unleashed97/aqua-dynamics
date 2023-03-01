@@ -1,0 +1,40 @@
+.card {
+    padding: 30px 50px;
+    background-color: #fffbfb;
+    border-radius: 8px;
+
+    &__image-wrapper {
+        height: 150px;
+    }
+
+    &__image {
+        display: block;
+        margin: 0 auto 34px;
+    }
+
+    &__title {
+        position: relative;
+
+        margin-bottom: 20px;
+
+        font-size: 2.1rem;
+        font-weight: 500;
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+
+            width: 36px;
+            height: 1px;
+
+            background-color: #ff3347;
+        }
+    }
+
+    &__desc {
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+}

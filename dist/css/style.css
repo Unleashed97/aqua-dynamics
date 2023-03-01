@@ -656,6 +656,17 @@ p {
   max-width: 700px;
   margin-bottom: 40px;
 }
+.section--advantages {
+  margin-bottom: 77px;
+}
+.section--advantages .section__title {
+  margin-bottom: 36px;
+}
+.section--advantages .section__content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 17px;
+}
 .section__title {
   font-size: 3.1rem;
   font-weight: 600;
@@ -750,4 +761,36 @@ p {
   .form--showcase .form__btn {
     max-width: 100%;
   }
+}
+
+.card {
+  padding: 30px 50px;
+  background-color: #fffbfb;
+  border-radius: 8px;
+}
+.card__image-wrapper {
+  height: 150px;
+}
+.card__image {
+  display: block;
+  margin: 0 auto 34px;
+}
+.card__title {
+  position: relative;
+  margin-bottom: 20px;
+  font-size: 2.1rem;
+  font-weight: 500;
+}
+.card__title::after {
+  content: "";
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  width: 36px;
+  height: 1px;
+  background-color: #ff3347;
+}
+.card__desc {
+  font-size: 1.4rem;
+  font-weight: 300;
 }
