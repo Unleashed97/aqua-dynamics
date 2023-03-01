@@ -47,6 +47,57 @@
         }
     }
 
+    &--faq {
+        .section__title {
+            max-width: 544px;
+            margin-bottom: 44px;
+        }
+
+        .section__content {
+            display: flex;
+            gap: 27px;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+            }
+        }
+
+        .section__banner {
+            width: 281px;
+            flex-shrink: 0;
+            height: fit-content;
+
+            padding: 27px 29px 33px;
+
+            border-radius: 8px;
+            border: 1px solid #bdbdbd;
+        }
+
+        .section__banner-title {
+            margin-bottom: 14px;
+
+            font-weight: 2.1rem;
+            font-weight: 500;
+        }
+
+        .section__banner-text {
+            margin-bottom: 59px;
+
+            font-size: 1.4rem;
+            font-weight: 300;
+            color: #1e2122;
+        }
+
+        .section__btn {
+            max-width: 224px;
+            width: 100%;
+
+            padding: 11px 0;
+
+            font-size: 1.9rem;
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;
