@@ -124,4 +124,89 @@
             }
         }
     }
+
+    &--work-steps {
+        display: flex;
+        flex-direction: column;
+        gap: 43px;
+
+        .list__item {
+            display: flex;
+            flex-direction: column;
+            gap: 28px;
+        }
+
+        .list__item-icon {
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 40px;
+            height: 40px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-shrink: 0;
+
+            font-size: 2.6rem;
+            color: $colors-primary;
+            font-weight: 600;
+
+            background-color: #0066cb;
+            border-radius: 50%;
+
+            @media (max-width: $sm) {
+                width: 30px;
+                height: 30px;
+
+                font-size: 1.8rem;
+            }
+        }
+
+        .list__item-title-wrapper {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+
+            min-height: 40px;
+
+            padding-left: 65px;
+
+            @media (max-width: $sm) {
+                min-height: 30px;
+                padding-left: 40px;
+            }
+        }
+
+        .list__item-title {
+            position: relative;
+
+            font-size: 2.1rem;
+            font-weight: 500;
+
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
+
+                width: 100px;
+                height: 1px;
+
+                background-color: #ff3347;
+            }
+        }
+
+        .list__item-desc {
+            padding-left: 65px;
+
+            font-weight: 300;
+
+            @media (max-width: $sm) {
+                padding-left: 40px;
+            }
+        }
+    }
 }

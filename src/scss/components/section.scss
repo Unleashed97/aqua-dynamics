@@ -269,6 +269,18 @@
         }
     }
 
+    &--work-steps {
+        margin-bottom: 191px;
+
+        .section__title {
+            margin-bottom: 47px;
+        }
+
+        @media (max-width: $sm) {
+            margin-bottom: 100px;
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;
