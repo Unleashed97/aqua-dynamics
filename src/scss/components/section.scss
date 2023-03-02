@@ -346,6 +346,21 @@
         }
     }
 
+    &--contacts {
+        margin-bottom: 31px;
+
+        .section__title {
+            margin-bottom: 57px;
+        }
+
+        .section__content {
+            min-height: 523px;
+
+            display: flex;
+            align-items: center;
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;

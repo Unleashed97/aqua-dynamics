@@ -957,6 +957,17 @@ p {
     max-width: 100%;
   }
 }
+.section--contacts {
+  margin-bottom: 31px;
+}
+.section--contacts .section__title {
+  margin-bottom: 57px;
+}
+.section--contacts .section__content {
+  min-height: 523px;
+  display: flex;
+  align-items: center;
+}
 .section__title {
   font-size: 3.1rem;
   font-weight: 600;
@@ -1625,4 +1636,32 @@ p {
 }
 .procedure__text .link:hover {
   text-decoration: underline;
+}
+
+.contacts {
+  width: fit-content;
+  padding: 45px 114px 51px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
+}
+.contacts__caption {
+  max-width: 255px;
+  margin-bottom: 37px;
+  color: #555454;
+  line-height: 22px;
+  text-align: center;
+}
+.contacts__tel {
+  display: block;
+  margin-bottom: 33px;
+  font-size: 2.4rem;
+  color: #0057ba;
+  text-align: center;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
 }
