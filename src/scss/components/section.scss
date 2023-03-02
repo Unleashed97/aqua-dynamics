@@ -180,6 +180,29 @@
         }
     }
 
+    &--services {
+        margin-bottom: 44px;
+
+        .section__title {
+            margin-bottom: 39px;
+        }
+    }
+
+    &--stats {
+        margin-bottom: 84px;
+
+        background: linear-gradient(
+            270deg,
+            #0188f0 0.99%,
+            rgba(1, 136, 240, 0.48) 100%
+        );
+        padding: 82px 0;
+
+        @media (max-width: $md) {
+            padding: 40px 0;
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;
