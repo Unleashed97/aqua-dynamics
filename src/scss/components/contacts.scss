@@ -6,6 +6,21 @@
 
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 
+    &--footer {
+        width: 100%;
+        max-width: 270px;
+
+        padding: 19px 0 0;
+
+        box-shadow: none;
+
+        .contacts__tel {
+            margin-bottom: 16px;
+
+            white-space: nowrap;
+        }
+    }
+
     &__caption {
         max-width: 255px;
 

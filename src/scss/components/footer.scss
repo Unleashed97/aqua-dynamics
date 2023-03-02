@@ -1,2 +1,58 @@
 .footer {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        gap: 40px;
+
+        padding: 31px 0;
+
+        @media (max-width: $lg) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        padding-top: 40px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+
+        color: #555454;
+        letter-spacing: 0.02em;
+    }
+
+    &__warning {
+        padding: 34px 44px;
+
+        font-weight: 300;
+        line-height: 21px;
+        letter-spacing: 0.02em;
+        color: #555454;
+
+        border-radius: 10px;
+        border: 1px solid #c3d9ea;
+
+        @media (max-width: $lg) {
+            order: 3;
+        }
+        @media (max-width: $sm) {
+            padding: 15px;
+        }
+    }
+
+    &__contacts {
+        @media (max-width: $lg) {
+            order: 2;
+        }
+    }
+
+    &__btn {
+        max-width: 269px;
+        width: 100%;
+
+        margin-bottom: 20px;
+        padding: 14px;
+    }
 }
