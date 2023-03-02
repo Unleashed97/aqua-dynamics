@@ -20,26 +20,6 @@
             gap: 20px;
         }
 
-        .form__group {
-        }
-
-        .form__input {
-            max-width: 237px;
-            width: 100%;
-            padding: 12px 24px;
-
-            border-radius: 1px;
-            border: 1px solid $colors-decor;
-
-            &::placeholder {
-                color: #636c72;
-            }
-
-            @media (max-width: $xl) {
-                max-width: 100%;
-            }
-        }
-
         .form__btn {
             width: 100%;
             max-width: 237px;
@@ -49,5 +29,115 @@
                 max-width: 100%;
             }
         }
+    }
+
+    &--application {
+        .form__group {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 39px;
+
+            margin-bottom: 21px;
+
+            @media (max-width: $lg) {
+                gap: 10px;
+            }
+            @media (max-width: $md) {
+                grid-template-columns: 1fr;
+                gap: 21px;
+            }
+        }
+
+        .form__input {
+            max-width: 100%;
+        }
+
+        .form__textarea {
+            max-width: 100%;
+            min-height: 134px;
+
+            grid-column: 1/3;
+        }
+
+        .form__footer {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            @media (max-width: $lg) {
+                flex-direction: column;
+            }
+        }
+
+        .form__checkbox {
+            position: absolute;
+            appearance: none;
+
+            &:checked + .form__checkbox-field {
+                background-image: url('../img/icons/checkbox-check.svg');
+            }
+        }
+
+        .form__checkbox-field {
+            width: 16px;
+            height: 16px;
+
+            background-color: #0066cb;
+
+            background-repeat: no-repeat;
+            background-position: top 5px left 5px;
+        }
+
+        .form__label {
+            position: relative;
+
+            display: flex;
+            align-items: center;
+            gap: 16px;
+
+            color: #636c72;
+            font-weight: 300;
+        }
+
+        .form__callback {
+            margin-bottom: 21px;
+        }
+
+        .form__btn {
+            width: 100%;
+            max-width: 276px;
+
+            gap: 14px;
+            align-self: flex-end;
+
+            padding: 12px;
+
+            @media (max-width: $lg) {
+                align-self: auto;
+                gap: 30px;
+            }
+        }
+    }
+
+    &__input,
+    &__textarea {
+        max-width: 237px;
+        width: 100%;
+        padding: 12px 24px;
+
+        border-radius: 1px;
+        border: 1px solid $colors-decor;
+
+        &::placeholder {
+            color: #636c72;
+        }
+
+        @media (max-width: $xl) {
+            max-width: 100%;
+        }
+    }
+
+    &__textarea {
+        resize: none;
     }
 }
