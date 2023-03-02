@@ -281,6 +281,29 @@
         }
     }
 
+    &--procedure {
+        margin-bottom: 180px;
+
+        @media (max-width: $sm) {
+            margin-bottom: 100px;
+        }
+
+        .section__title {
+            margin-bottom: 69px;
+        }
+
+        .section__content {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: $xl) {
+                flex-direction: column;
+                align-items: center;
+                gap: 50px;
+            }
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;
