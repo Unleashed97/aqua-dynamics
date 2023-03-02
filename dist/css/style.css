@@ -456,6 +456,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 14px;
   font-family: "Inter", sans-serif;
   font-size: 1.7rem;
   background: none;
@@ -922,6 +923,40 @@ p {
     gap: 50px;
   }
 }
+.section--request {
+  margin-bottom: 89px;
+  color: #ffffff;
+  background: linear-gradient(270deg, #0188f0 0.99%, rgba(1, 136, 240, 0.48) 100%);
+}
+.section--request .section__title {
+  margin-bottom: 38px;
+}
+.section--request .section__content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 46px;
+}
+@media (max-width: 768px) {
+  .section--request .section__content {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.section--request .section__form {
+  max-width: 656px;
+  width: 100%;
+  padding: 52px 0 0;
+}
+@media (max-width: 1200px) {
+  .section--request .section__form {
+    max-width: 300px;
+  }
+}
+@media (max-width: 768px) {
+  .section--request .section__form {
+    max-width: 100%;
+  }
+}
 .section__title {
   font-size: 3.1rem;
   font-weight: 600;
@@ -1175,36 +1210,12 @@ p {
     flex-direction: column;
   }
 }
-.form--application .form__checkbox {
-  position: absolute;
-  appearance: none;
-}
-.form--application .form__checkbox:checked + .form__checkbox-field {
-  background-image: url("../img/icons/checkbox-check.svg");
-}
-.form--application .form__checkbox-field {
-  width: 16px;
-  height: 16px;
-  flex-shrink: 0;
-  background-color: #0066cb;
-  background-repeat: no-repeat;
-  background-position: top 5px left 5px;
-}
-.form--application .form__label {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  color: #636c72;
-  font-weight: 300;
-}
 .form--application .form__callback {
   margin-bottom: 21px;
 }
 .form--application .form__btn {
   width: 100%;
   max-width: 276px;
-  gap: 14px;
   align-self: flex-end;
   padding: 12px;
 }
@@ -1213,6 +1224,28 @@ p {
     align-self: auto;
     gap: 30px;
   }
+}
+.form--request .form__group {
+  margin-bottom: 15px;
+}
+.form--request .form__input {
+  width: 100%;
+  max-width: 100%;
+  height: 58px;
+  background-color: #80c3f7;
+  border-color: #ffffff;
+}
+.form--request .form__input::placeholder {
+  font-size: 1.4rem;
+  color: #ffffff;
+}
+.form--request .form__label {
+  color: #ffffff;
+}
+.form--request .form__btn {
+  min-height: 58px;
+  margin-bottom: 39px;
+  font-weight: 700;
 }
 .form__input, .form__textarea {
   max-width: 237px;
@@ -1231,6 +1264,29 @@ p {
 }
 .form__textarea {
   resize: none;
+}
+.form__checkbox {
+  position: absolute;
+  appearance: none;
+}
+.form__checkbox:checked + .form__checkbox-field {
+  background-image: url("../img/icons/checkbox-check.svg");
+}
+.form__checkbox-field {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  background-color: #0066cb;
+  background-repeat: no-repeat;
+  background-position: top 5px left 5px;
+}
+.form__label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #636c72;
+  font-weight: 300;
 }
 
 .card--advantages {
@@ -1435,6 +1491,42 @@ p {
 
 .steps {
   max-width: 250px;
+}
+.steps--request {
+  position: relative;
+  max-width: 380px;
+  padding: 0 62px;
+}
+@media (max-width: 768px) {
+  .steps--request {
+    max-width: 250px;
+    padding: 0;
+  }
+}
+.steps--request::after {
+  content: "";
+  position: absolute;
+  top: -66px;
+  bottom: -79px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  border: 3px solid #dddddd;
+  border-radius: 10px;
+}
+@media (max-width: 768px) {
+  .steps--request::after {
+    display: none;
+  }
+}
+.steps--request .steps__item {
+  color: #ffffff;
+}
+.steps--request .steps__item:last-child {
+  color: #ffffff;
+}
+.steps--request .steps__item-icon-wrapper::after {
+  background-color: #ffffff;
 }
 .steps__caption {
   margin-bottom: 20px;

@@ -69,37 +69,6 @@
             }
         }
 
-        .form__checkbox {
-            position: absolute;
-            appearance: none;
-
-            &:checked + .form__checkbox-field {
-                background-image: url('../img/icons/checkbox-check.svg');
-            }
-        }
-
-        .form__checkbox-field {
-            width: 16px;
-            height: 16px;
-            flex-shrink: 0;
-
-            background-color: #0066cb;
-
-            background-repeat: no-repeat;
-            background-position: top 5px left 5px;
-        }
-
-        .form__label {
-            position: relative;
-
-            display: flex;
-            align-items: center;
-            gap: 16px;
-
-            color: #636c72;
-            font-weight: 300;
-        }
-
         .form__callback {
             margin-bottom: 21px;
         }
@@ -108,7 +77,6 @@
             width: 100%;
             max-width: 276px;
 
-            gap: 14px;
             align-self: flex-end;
 
             padding: 12px;
@@ -117,6 +85,37 @@
                 align-self: auto;
                 gap: 30px;
             }
+        }
+    }
+
+    &--request {
+        .form__group {
+            margin-bottom: 15px;
+        }
+        .form__input {
+            width: 100%;
+            max-width: 100%;
+            height: 58px;
+
+            background-color: #80c3f7;
+            border-color: $colors-primary;
+
+            &::placeholder {
+                font-size: 1.4rem;
+                color: $colors-primary;
+            }
+        }
+
+        .form__label {
+            color: $colors-primary;
+        }
+
+        .form__btn {
+            min-height: 58px;
+
+            margin-bottom: 39px;
+
+            font-weight: 700;
         }
     }
 
@@ -140,5 +139,36 @@
 
     &__textarea {
         resize: none;
+    }
+
+    &__checkbox {
+        position: absolute;
+        appearance: none;
+
+        &:checked + .form__checkbox-field {
+            background-image: url('../img/icons/checkbox-check.svg');
+        }
+    }
+
+    &__checkbox-field {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+
+        background-color: #0066cb;
+
+        background-repeat: no-repeat;
+        background-position: top 5px left 5px;
+    }
+
+    &__label {
+        position: relative;
+
+        display: flex;
+        align-items: center;
+        gap: 16px;
+
+        color: #636c72;
+        font-weight: 300;
     }
 }

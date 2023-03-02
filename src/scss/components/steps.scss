@@ -1,6 +1,48 @@
 .steps {
     max-width: 250px;
 
+    &--request {
+        position: relative;
+
+        max-width: 380px;
+
+        padding: 0 62px;
+
+        @media (max-width: $md) {
+            max-width: 250px;
+            padding: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: -66px;
+            bottom: -79px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+
+            border: 3px solid #dddddd;
+            border-radius: 10px;
+
+            @media (max-width: $md) {
+                display: none;
+            }
+        }
+
+        .steps__item {
+            color: $colors-primary;
+
+            &:last-child {
+                color: $colors-primary;
+            }
+        }
+
+        .steps__item-icon-wrapper::after {
+            background-color: $colors-primary;
+        }
+    }
+
     &__caption {
         margin-bottom: 20px;
 

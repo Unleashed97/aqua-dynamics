@@ -304,6 +304,48 @@
         }
     }
 
+    &--request {
+        margin-bottom: 89px;
+
+        color: $colors-primary;
+
+        background: linear-gradient(
+            270deg,
+            #0188f0 0.99%,
+            rgba(1, 136, 240, 0.48) 100%
+        );
+
+        .section__title {
+            margin-bottom: 38px;
+        }
+
+        .section__content {
+            display: flex;
+            justify-content: space-between;
+
+            padding-bottom: 46px;
+
+            @media (max-width: $md) {
+                flex-direction: column;
+                gap: 50px;
+            }
+        }
+
+        .section__form {
+            max-width: 656px;
+            width: 100%;
+
+            padding: 52px 0 0;
+
+            @media (max-width: $xl) {
+                max-width: 300px;
+            }
+            @media (max-width: $md) {
+                max-width: 100%;
+            }
+        }
+    }
+
     &__title {
         font-size: 3.1rem;
         font-weight: 600;
