@@ -56,6 +56,8 @@
     }
 
     &--faq {
+        margin-bottom: 103px;
+
         .section__title {
             max-width: 544px;
             margin-bottom: 44px;
@@ -103,6 +105,78 @@
             padding: 11px 0;
 
             font-size: 1.9rem;
+        }
+    }
+
+    &--confidence {
+        margin-bottom: 143px;
+
+        .section__title {
+            max-width: 400px;
+
+            margin-bottom: 31px;
+        }
+
+        .section__content {
+            position: relative;
+
+            padding-top: 78px;
+
+            max-width: 1060px;
+            height: 100%;
+            min-height: 418px;
+
+            display: flex;
+            align-items: stretch;
+
+            margin: 0 auto;
+
+            @media (max-width: $lg) {
+                padding-top: 0;
+                min-height: auto;
+
+                align-items: center;
+                justify-content: center;
+                gap: 100px;
+            }
+
+            @media (max-width: $md) {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }
+
+        .section__cards-list {
+            width: 100%;
+
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: $lg) {
+                width: fit-content;
+                flex-direction: column;
+                gap: 50px;
+            }
+            @media (max-width: $md) {
+                gap: 20px;
+            }
+        }
+
+        .section__image {
+            position: absolute;
+            top: 0;
+            left: 50%;
+
+            transform: translate(-50%);
+
+            @media (max-width: $lg) {
+                position: static;
+
+                display: block;
+                max-width: 100%;
+                height: auto;
+                transform: translate(0);
+            }
         }
     }
 

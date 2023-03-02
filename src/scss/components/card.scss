@@ -1,44 +1,111 @@
 .card {
-    padding: 30px 50px;
-    background-color: #fffbfb;
-    border-radius: 8px;
+    &--advantages {
+        padding: 30px 50px;
+        background-color: #fffbfb;
+        border-radius: 8px;
 
-    @media (max-width: $sm) {
-        padding: 15px;
-    }
+        @media (max-width: $sm) {
+            padding: 15px;
+        }
 
-    &__image-wrapper {
-        height: 150px;
-    }
+        .card__image-wrapper {
+            height: 150px;
+        }
 
-    &__image {
-        display: block;
-        margin: 0 auto 34px;
-    }
+        .card__image {
+            display: block;
+            margin: 0 auto 34px;
+        }
 
-    &__title {
-        position: relative;
+        .card__title {
+            position: relative;
 
-        margin-bottom: 20px;
+            margin-bottom: 20px;
 
-        font-size: 2.1rem;
-        font-weight: 500;
+            font-size: 2.1rem;
+            font-weight: 500;
 
-        &::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 0;
 
-            width: 36px;
-            height: 1px;
+                width: 36px;
+                height: 1px;
 
-            background-color: #ff3347;
+                background-color: #ff3347;
+            }
+        }
+
+        .card__desc {
+            font-size: 1.4rem;
+            font-weight: 300;
         }
     }
 
-    &__desc {
-        font-size: 1.4rem;
-        font-weight: 300;
+    &--confidence {
+        position: relative;
+
+        max-width: 310px;
+        height: 118px;
+
+        padding: 22px 34px;
+
+        color: $colors-primary;
+        text-align: center;
+
+        border-radius: 10px;
+        background: linear-gradient(180deg, #0066cb 0%, #0188f0 100%);
+
+        &:nth-child(1)::after,
+        &:nth-child(3)::after {
+            content: '';
+            position: absolute;
+            bottom: -218px;
+
+            width: 159px;
+            height: 200px;
+
+            background-image: url('../img/section/confidence/decor.svg');
+            background-repeat: no-repeat;
+        }
+
+        &:nth-child(1)::after {
+            right: 0;
+
+            transform: rotate(160deg);
+        }
+        &:nth-child(3)::after {
+            left: 0;
+            transform: rotate(100deg);
+        }
+
+        &:nth-child(2) {
+            align-self: flex-end;
+        }
+
+        @media (max-width: $lg) {
+            &:nth-child(2) {
+                align-self: auto;
+            }
+
+            &:nth-child(1)::after,
+            &:nth-child(3)::after {
+                display: none;
+            }
+        }
+
+        .card__title {
+            margin-bottom: 12px;
+
+            font-size: 2.4rem;
+            font-weight: 600;
+        }
+
+        .card__desc {
+            font-size: 1.4rem;
+            font-weight: 300;
+        }
     }
 }

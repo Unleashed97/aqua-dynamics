@@ -677,6 +677,9 @@ p {
     grid-template-columns: 1fr;
   }
 }
+.section--faq {
+  margin-bottom: 103px;
+}
 .section--faq .section__title {
   max-width: 544px;
   margin-bottom: 44px;
@@ -714,6 +717,70 @@ p {
   width: 100%;
   padding: 11px 0;
   font-size: 1.9rem;
+}
+.section--confidence {
+  margin-bottom: 143px;
+}
+.section--confidence .section__title {
+  max-width: 400px;
+  margin-bottom: 31px;
+}
+.section--confidence .section__content {
+  position: relative;
+  padding-top: 78px;
+  max-width: 1060px;
+  height: 100%;
+  min-height: 418px;
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+}
+@media (max-width: 992px) {
+  .section--confidence .section__content {
+    padding-top: 0;
+    min-height: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .section--confidence .section__content {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+.section--confidence .section__cards-list {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 992px) {
+  .section--confidence .section__cards-list {
+    width: fit-content;
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .section--confidence .section__cards-list {
+    gap: 20px;
+  }
+}
+.section--confidence .section__image {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+}
+@media (max-width: 992px) {
+  .section--confidence .section__image {
+    position: static;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    transform: translate(0);
+  }
 }
 .section__title {
   font-size: 3.1rem;
@@ -821,30 +888,30 @@ p {
   }
 }
 
-.card {
+.card--advantages {
   padding: 30px 50px;
   background-color: #fffbfb;
   border-radius: 8px;
 }
 @media (max-width: 576px) {
-  .card {
+  .card--advantages {
     padding: 15px;
   }
 }
-.card__image-wrapper {
+.card--advantages .card__image-wrapper {
   height: 150px;
 }
-.card__image {
+.card--advantages .card__image {
   display: block;
   margin: 0 auto 34px;
 }
-.card__title {
+.card--advantages .card__title {
   position: relative;
   margin-bottom: 20px;
   font-size: 2.1rem;
   font-weight: 500;
 }
-.card__title::after {
+.card--advantages .card__title::after {
   content: "";
   position: absolute;
   bottom: -4px;
@@ -853,7 +920,54 @@ p {
   height: 1px;
   background-color: #ff3347;
 }
-.card__desc {
+.card--advantages .card__desc {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.card--confidence {
+  position: relative;
+  max-width: 310px;
+  height: 118px;
+  padding: 22px 34px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #0066cb 0%, #0188f0 100%);
+}
+.card--confidence:nth-child(1)::after, .card--confidence:nth-child(3)::after {
+  content: "";
+  position: absolute;
+  bottom: -218px;
+  width: 159px;
+  height: 200px;
+  background-image: url("../img/section/confidence/decor.svg");
+  background-repeat: no-repeat;
+}
+.card--confidence:nth-child(1)::after {
+  right: 0;
+  transform: rotate(160deg);
+}
+.card--confidence:nth-child(3)::after {
+  left: 0;
+  transform: rotate(100deg);
+}
+.card--confidence:nth-child(2) {
+  align-self: flex-end;
+}
+@media (max-width: 992px) {
+  .card--confidence:nth-child(2) {
+    align-self: auto;
+  }
+  .card--confidence:nth-child(1)::after, .card--confidence:nth-child(3)::after {
+    display: none;
+  }
+}
+.card--confidence .card__title {
+  margin-bottom: 12px;
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+.card--confidence .card__desc {
   font-size: 1.4rem;
   font-weight: 300;
 }
