@@ -768,6 +768,10 @@ p {
   margin: 0;
 }
 
+.fixed {
+  overflow: hidden;
+}
+
 .container {
   width: 100%;
   max-width: 1310px;
@@ -901,6 +905,8 @@ p {
     position: absolute;
     inset: 0;
     z-index: 10;
+    margin: auto 0;
+    overflow: auto;
     background-color: #ffffff;
   }
   .header.active .header__top {

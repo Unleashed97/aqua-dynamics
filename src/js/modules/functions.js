@@ -5,6 +5,7 @@ export const handleBurger = () => {
     burgerBtn.addEventListener('click', () => {
         burgerBtn.classList.toggle('active')
         header.classList.toggle('active')
+        document.body.classList.toggle('fixed')
     })
 }
 

@@ -5,6 +5,10 @@
             inset: 0;
             z-index: 10;
 
+            margin: auto 0;
+
+            overflow: auto;
+
             background-color: $colors-primary;
             .header__top {
                 display: flex;

@@ -48,6 +48,10 @@ p {
     margin: 0;
 }
 
+.fixed {
+    overflow: hidden;
+}
+
 // components
 @import 'components/container.scss';
 @import 'components/burger.scss';
