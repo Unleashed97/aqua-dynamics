@@ -1,0 +1,106 @@
+.splide {
+    &__arrows {
+        display: flex;
+        gap: 24px;
+    }
+    &__arrow {
+        position: static;
+        transform: translateY(0);
+
+        width: 46px;
+        height: 46px;
+
+        padding: 10px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 50%;
+
+        background-color: #fff;
+        border: 1px solid $colors-decor;
+
+        cursor: pointer;
+
+        transition: 0.3s linear;
+
+        &:hover {
+            background-color: #0188f0;
+            border-color: #0188f0;
+            .icon {
+                fill: #fff;
+            }
+        }
+
+        .icon {
+            transition: fill 0.3s linear;
+        }
+
+        &--prev {
+            svg {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    &__slide img {
+        // width: auto;
+        // height: auto;
+    }
+
+    &__images {
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    &--testimonials {
+        .splide__track {
+            padding: 20px 0;
+        }
+        .splide__slide {
+            width: 100%;
+            max-width: 60%;
+            min-height: 324px;
+        }
+
+        .splide__slide.is-next {
+            position: relative;
+            left: -30%;
+            z-index: -1;
+        }
+        .splide__slide:not(.is-active) {
+            transform: scale(0.9);
+
+            position: relative;
+        }
+
+        .splide__slide.is-active {
+            .testimonial {
+                filter: blur(0);
+                &::after {
+                    display: none;
+                }
+            }
+            width: 100%;
+            max-width: 60%;
+            min-height: 324px;
+        }
+        // .splide__slide::after:not(.splide__slide.active) {
+        //     content: '';
+        //     position: absolute;
+        //     inset: 0;
+        //     z-index: 1;
+
+        //     background: rgba(90, 90, 90, 0.1);
+
+        //     backdrop-filter: blur(2px);
+        // }
+    }
+}
+
+#splide-works {
+    .splide__btn-prev--works {
+    }
+}

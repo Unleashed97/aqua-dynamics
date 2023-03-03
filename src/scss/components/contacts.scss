@@ -6,6 +6,12 @@
 
     box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.18);
 
+    background-color: #fff;
+
+    &--map {
+        position: absolute;
+        left: 0;
+    }
     &--footer {
         width: 100%;
         max-width: 270px;

@@ -1,6 +1,9 @@
 // normalize css
 @import 'vendor/normalize.scss';
 
+// splide slider
+@import 'vendor/splide.scss';
+
 // vars
 @import 'vars.scss';
 
@@ -63,3 +66,6 @@ p {
 @import 'components/procedure.scss';
 @import 'components/contacts.scss';
 @import 'components/socials.scss';
+@import 'components/splide.scss';
+@import 'components/fslightbox.scss';
+@import 'components/testimonial.scss';

@@ -1,0 +1,58 @@
+.testimonial {
+    padding: 29px 33px;
+    min-height: 324px;
+
+    border-radius: 8px;
+    background-color: $colors-primary;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+
+    filter: blur(2px);
+
+    &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+
+        background-color: rgba(#5a5a5a, 0.1);
+        border-radius: 8px;
+    }
+    &__icon {
+        width: 18px !important;
+        height: 14px !important;
+
+        margin-bottom: 33px;
+    }
+
+    &__text {
+        margin-bottom: 26px;
+    }
+
+    &__author {
+        display: flex;
+        gap: 24px;
+    }
+
+    &__author-image {
+        width: 57px !important;
+        height: 57px !important;
+
+        border-radius: 50%;
+    }
+
+    &__author-info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    &__author-name {
+        font-weight: 2.1rem;
+        line-height: 22px;
+    }
+
+    &__author-about {
+        line-height: 22px;
+        color: #0066cb;
+    }
+}

@@ -33,7 +33,7 @@ export const handleFaq = () => {
 }
 
 export const handleMap = () => {
-    const map = document.getElementById('yamaps')
+    const map = document.getElementById('yamap')
 
     if (map) {
         let ok = false
