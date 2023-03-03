@@ -1,5 +1,13 @@
 .header {
-    @media (max-width: $md) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+
+    background-color: $colors-primary;
+
+    @media (max-width: $xl) {
         &.active {
             position: absolute;
             inset: 0;
@@ -141,6 +149,9 @@
 
         padding: 10px;
 
+        @media (max-width: $xl) {
+            margin-right: 50px;
+        }
         @media (max-width: $lg) {
             max-width: 200px;
         }

@@ -76,3 +76,31 @@ export const handleTabs = () => {
         }),
     )
 }
+
+export const handleNav = () => {
+    const navLinks = document.querySelectorAll('.nav .nav__link')
+
+    navLinks.forEach((link) =>
+        link.addEventListener('click', (e) => {
+            e.preventDefault()
+
+            navLinks.forEach((link) => link.classList.remove('active'))
+            link.classList.add('active')
+
+            const headerOffset = 160
+
+            const targetId = link.getAttribute('data-target')
+            const targetEl = document.querySelector(`#${targetId}`)
+            const elTopOffset = targetEl.getBoundingClientRect().top
+            const offsetPosition =
+                elTopOffset + window.pageYOffset - headerOffset
+
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth',
+            })
+
+            console.log(window.pageYOffset, elTopOffset, offsetPosition)
+        }),
+    )
+}

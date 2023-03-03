@@ -1,5 +1,7 @@
 .section {
     &--showcase {
+        margin-top: 156px;
+
         padding: 72px 0 59px;
 
         margin-bottom: 52px;
@@ -9,6 +11,10 @@
         background-repeat: no-repeat;
 
         border-bottom: 1px solid #f5f5f5;
+
+        @media (max-width: $xl) {
+            margin-top: 90px;
+        }
 
         @media (max-width: $lg) {
             padding: 400px 0 0;

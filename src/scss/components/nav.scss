@@ -4,7 +4,7 @@
         justify-content: space-between;
         align-items: center;
 
-        @media (max-width: $md) {
+        @media (max-width: $xl) {
             display: flex;
             flex-direction: column;
             gap: 20px;
@@ -18,7 +18,8 @@
     &__link {
         transition: color 0.3s linear;
 
-        &:hover {
+        &:hover,
+        &.active {
             color: $colors-blue;
         }
     }

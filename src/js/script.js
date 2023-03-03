@@ -3,6 +3,7 @@ customFunctions.handleBurger()
 customFunctions.handleFaq()
 customFunctions.handleMap()
 customFunctions.handleTabs()
+customFunctions.handleNav()
 
 // vendors
 document.addEventListener('DOMContentLoaded', function () {
