@@ -57,3 +57,22 @@ export const handleMap = () => {
         }
     }
 }
+
+export const handleTabs = () => {
+    const tabs = document.querySelector('.tabs')
+    const btnControlList = document.querySelectorAll('.btn--control')
+    const contentItems = tabs.querySelectorAll('.tabs__content-item')
+
+    btnControlList.forEach((btn) =>
+        btn.addEventListener('click', () => {
+            btnControlList.forEach((btn) => btn.classList.remove('active'))
+            contentItems.forEach((item) => item.classList.remove('active'))
+
+            btn.classList.add('active')
+            const targetId = btn.getAttribute('data-target')
+
+            const targetEl = tabs.querySelector(`#${targetId}`)
+            targetEl.classList.add('active')
+        }),
+    )
+}

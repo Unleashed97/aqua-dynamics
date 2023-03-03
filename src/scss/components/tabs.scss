@@ -15,6 +15,10 @@
         }
     }
 
-    &__content {
+    &__content-item {
+        display: none;
+        &.active {
+            display: block;
+        }
     }
 }

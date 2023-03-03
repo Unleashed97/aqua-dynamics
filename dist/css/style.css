@@ -1929,6 +1929,13 @@ p {
     gap: 15px;
   }
 }
+.tabs__content-item {
+  display: none;
+}
+.tabs__content-item.active {
+  display: block;
+}
+
 .stats {
   display: grid;
   grid-template-columns: repeat(3, auto);
