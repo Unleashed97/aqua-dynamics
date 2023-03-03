@@ -1353,18 +1353,20 @@ p {
 .section--request .section__content {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 46px;
+  align-items: center;
+  min-height: 439px;
 }
 @media (max-width: 768px) {
   .section--request .section__content {
     flex-direction: column;
+    align-items: flex-start;
     gap: 50px;
+    padding: 40px 0;
   }
 }
 .section--request .section__form {
   max-width: 656px;
   width: 100%;
-  padding: 52px 0 0;
 }
 @media (max-width: 1200px) {
   .section--request .section__form {
@@ -1949,8 +1951,8 @@ p {
 }
 .steps--request {
   position: relative;
-  max-width: 380px;
-  padding: 0 62px;
+  max-width: 330px;
+  padding: 0 27px 0 62px;
 }
 @media (max-width: 768px) {
   .steps--request {
@@ -1980,8 +1982,8 @@ p {
 .steps--request .steps__item:last-child {
   color: #ffffff;
 }
-.steps--request .steps__item-icon-wrapper::after {
-  background-color: #ffffff;
+.steps--request .steps__item-icon-wrapper {
+  background-color: transparent;
 }
 .steps__caption {
   margin-bottom: 20px;
@@ -1991,35 +1993,33 @@ p {
 .steps__list {
   display: flex;
   flex-direction: column;
-  gap: 43px;
+  gap: 7px;
 }
 .steps__item {
-  display: flex;
-  gap: 14px;
+  position: relative;
+  padding-left: 9px;
   color: #636c72;
 }
 .steps__item:last-child {
   color: #000000;
 }
-.steps__item:last-child .steps__item-icon-wrapper::after {
-  display: none;
+.steps__item:last-child .steps__item-content {
+  min-height: auto;
+  border-left: none;
 }
 .steps__item-icon-wrapper {
-  position: relative;
-  width: 19px;
-  height: 19px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, #0057ba 0%, rgba(41, 82, 128, 0) 100%);
-}
-.steps__item-icon-wrapper::after {
-  content: "";
   position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  bottom: -35px;
-  width: 1px;
-  height: 30px;
-  background-color: #bdbdbd;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 19px;
+  height: 25px;
+  background-color: #fff;
+}
+.steps__item-content {
+  min-height: 53px;
+  padding-left: 23px;
+  border-left: 1px solid #bdbdbd;
 }
 
 .procedure__item {

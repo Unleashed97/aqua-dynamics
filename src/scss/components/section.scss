@@ -322,20 +322,23 @@
         .section__content {
             display: flex;
             justify-content: space-between;
+            align-items: center;
 
-            padding-bottom: 46px;
+            min-height: 439px;
 
             @media (max-width: $md) {
                 flex-direction: column;
+
+                align-items: flex-start;
                 gap: 50px;
+
+                padding: 40px 0;
             }
         }
 
         .section__form {
             max-width: 656px;
             width: 100%;
-
-            padding: 52px 0 0;
 
             @media (max-width: $xl) {
                 max-width: 300px;
