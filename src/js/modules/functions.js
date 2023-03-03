@@ -12,23 +12,24 @@ export const handleBurger = () => {
 export const handleFaq = () => {
     const questions = document.querySelectorAll('.faq')
     questions.forEach((question) => {
-        const opener = question.querySelector('.faq-title')
+        const opener = question.querySelector('.faq-panel')
         const status = question.querySelector('.faq-status')
+
         opener.addEventListener('click', () => {
             ;[...questions]
                 .filter((q) => q !== question)
                 .forEach((q) => {
+                    const status = q.querySelector('.faq-status')
                     q.classList.remove('opened')
                     status.src = 'img/icons/plus-circle.svg'
                 })
-            question.classList.toggle('opened')
             if (question.classList.contains('opened')) {
-                status.src = 'img/icons/minus-circle.svg'
-            } else {
+                question.classList.remove('opened')
                 status.src = 'img/icons/plus-circle.svg'
+            } else {
+                question.classList.add('opened')
+                status.src = 'img/icons/minus-circle.svg'
             }
-
-            console.log(status)
         })
     })
 }
