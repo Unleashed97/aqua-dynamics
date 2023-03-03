@@ -1410,6 +1410,9 @@ p {
   height: 100%;
   min-height: 523px;
 }
+.section--contacts .yandex-map iframe {
+  min-height: 532px;
+}
 .section--testimonials {
   margin-bottom: 97px;
 }

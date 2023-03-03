@@ -377,6 +377,10 @@
             height: 100%;
             min-height: 523px;
         }
+
+        .yandex-map iframe {
+            min-height: 532px;
+        }
     }
 
     &--testimonials {
