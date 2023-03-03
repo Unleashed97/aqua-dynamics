@@ -7,13 +7,21 @@ customFunctions.handleMap()
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide-testimonials', {
         type: 'loop',
-        perPage: 1,
+        perPage: 2,
+        focus: 0,
         autoplay: false,
+        padding: { top: 20, bottom: 20, left: 30 },
         interval: 8000,
         updateOnMove: true,
         pagination: false,
         gap: '20px',
-        breakpoints: {},
+        updateOnMove: true,
+        breakpoints: {
+            768: {
+                perPage: 1,
+                gap: 0,
+            },
+        },
     }).mount()
 
     new Splide('#splide-works', {
