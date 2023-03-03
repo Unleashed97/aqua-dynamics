@@ -2206,6 +2206,17 @@ p {
   justify-content: center;
   gap: 28px;
 }
+.socials__item {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.socials__link {
+  display: block;
+}
+
 .splide__arrows {
   display: flex;
   gap: 24px;
