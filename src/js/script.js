@@ -1,9 +1,9 @@
 import * as customFunctions from './modules/functions.js'
 customFunctions.handleBurger()
 customFunctions.handleFaq()
-// customFunctions.handleMap()
-// vendors
+customFunctions.handleMap()
 
+// vendors
 document.addEventListener('DOMContentLoaded', function () {
     new Splide('#splide-testimonials', {
         type: 'loop',
